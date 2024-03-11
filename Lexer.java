@@ -57,6 +57,7 @@ public class Lexer {
         oneCharSymbols.put(")", Token.TokenType.RPAREN);
         oneCharSymbols.put(";", Token.TokenType.RPAREN);
         oneCharSymbols.put("%", Token.TokenType.RPAREN);
+        oneCharSymbols.put(",", Token.TokenType.COMMA);
         
     }
 
@@ -177,4 +178,5 @@ class LexerException extends Exception {
     public LexerException(String message) {
         super(message);
     }
+
 }

@@ -4,11 +4,11 @@ public class Token {
         WORD, NUMBER, ENDOFLINE, STRINGLITERAL, LABEL,
         PRINT, READ, INPUT, DATA, GOSUB, FOR, TO, STEP, NEXT, RETURN, IF, THEN, FUNCTION, WHILE, END,
         EQUALS, NOTEQUALS, LPAREN, RPAREN, PLUS, MINUS, STAR, SLASH, LESSTHAN, GREATERTHAN, LEQ, GEQ,
-        SPECIAL_CHAR
+        SPECIAL_CHAR, COMMA
     }
 
-    private TokenType type;
-    private String value;
+    TokenType type;
+    String value;
     private int lineNumber;
     private int charPosition;
 
